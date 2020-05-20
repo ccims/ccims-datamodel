@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ccims" nsURI="https://de/unistuttgart/iste/rss/ccims" nsPrefix="de.unistuttgart.iste.rss.ccims">
+  <eClassifiers xsi:type="ecore:EClass" name="CrossComponentIssue">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textBody" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOpen" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="labels" upperBound="-1"
+        eType="#//Label"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="linkedIssues" upperBound="-1"
+        eType="#//CrossComponentIssue"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignees" upperBound="-1"
+        eType="#//Developer" eOpposite="#//Developer/assignedIssues"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concernedComponents" lowerBound="1"
+        upperBound="-1" eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="representedIssues" lowerBound="1"
+        upperBound="-1" eType="#//Issue"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Label"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Developer">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="assignedIssues" upperBound="-1"
+        eType="#//CrossComponentIssue" eOpposite="#//CrossComponentIssue/assignees"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="developedComponents" lowerBound="1"
+        upperBound="-1" eType="#//Component"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Component"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Issue">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="concernedComponent" lowerBound="1"
+        eType="#//Component"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        eType="#//IssueManagementSystem" eOpposite="#//IssueManagementSystem/storedIssues"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="IssueManagementSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="storedIssues" upperBound="-1"
+        eType="#//Issue" eOpposite="#//Issue/location"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CrossComponentIssueManagementSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="issueRootLocations" lowerBound="1"
+        upperBound="-1" eType="#//IssueManagementSystem"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="managedCroCoIssues" upperBound="-1"
+        eType="#//CrossComponentIssue"/>
+  </eClassifiers>
+</ecore:EPackage>
