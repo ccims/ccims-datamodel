@@ -1,0 +1,7 @@
+Association > Label:sourceRole, Association > Label:targetRole {
+	maskLabel: name;
+}
+
+Property {
+	maskLabel: name, visibility, type;
+}
