@@ -3,7 +3,16 @@
   <packageImport xmi:type="uml:PackageImport" xmi:id="_ShSWgKmBEeq2bKz4Gn3EVg">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Class" xmi:id="_g2BncKmBEeq2bKz4Gn3EVg" name="Component"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_g2BncKmBEeq2bKz4Gn3EVg" name="Component">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_-xM-MrfZEeqS54ICgwWEeQ" name="providedInterfaces" type="_5PMuMLfZEeqS54ICgwWEeQ" aggregation="composite" association="_-xMXILfZEeqS54ICgwWEeQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-xQBgLfZEeqS54ICgwWEeQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-xQBgbfZEeqS54ICgwWEeQ" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_keCW8rfaEeqS54ICgwWEeQ" name="consumedInterfaces" type="_5PMuMLfZEeqS54ICgwWEeQ" association="_keBI0LfaEeqS54ICgwWEeQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_keC-ALfaEeqS54ICgwWEeQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keC-AbfaEeqS54ICgwWEeQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_iuHxgKmBEeq2bKz4Gn3EVg" name="CrossComponentIssue">
     <ownedAttribute xmi:type="uml:Property" xmi:id="_zhLfAKmBEeq2bKz4Gn3EVg" name="title" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -31,6 +40,10 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_Dh7JUqmDEeq2bKz4Gn3EVg" name="linkedIssues" type="_iuHxgKmBEeq2bKz4Gn3EVg" association="_Dh5UIKmDEeq2bKz4Gn3EVg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pvHLMKmFEeq2bKz4Gn3EVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K-clQKmDEeq2bKz4Gn3EVg" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_F1o00rfbEeqS54ICgwWEeQ" name="concernedInterface" type="_5PMuMLfZEeqS54ICgwWEeQ" association="_F1oNwLfbEeqS54ICgwWEeQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F1pb4LfbEeqS54ICgwWEeQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_F1pb4bfbEeqS54ICgwWEeQ" value="1"/>
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_lT_nkKmBEeq2bKz4Gn3EVg" name="Developer">
@@ -164,5 +177,30 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yieIkbe6EeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_yifWsre6EeqS54ICgwWEeQ" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_yicTYLe6EeqS54ICgwWEeQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5PMuMLfZEeqS54ICgwWEeQ" name="Interface"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-xMXILfZEeqS54ICgwWEeQ" name="Component_provides_Interface" memberEnd="_-xM-MrfZEeqS54ICgwWEeQ _-xQBgrfZEeqS54ICgwWEeQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-xM-MLfZEeqS54ICgwWEeQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-xM-MbfZEeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-xQBgrfZEeqS54ICgwWEeQ" type="_g2BncKmBEeq2bKz4Gn3EVg" association="_-xMXILfZEeqS54ICgwWEeQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_keBI0LfaEeqS54ICgwWEeQ" name="Component_consumes_Interface" memberEnd="_keCW8rfaEeqS54ICgwWEeQ _keC-ArfaEeqS54ICgwWEeQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_keCW8LfaEeqS54ICgwWEeQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_keCW8bfaEeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_keC-ArfaEeqS54ICgwWEeQ" type="_g2BncKmBEeq2bKz4Gn3EVg" association="_keBI0LfaEeqS54ICgwWEeQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yM8-ALfaEeqS54ICgwWEeQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yNBPcLfaEeqS54ICgwWEeQ" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_F1oNwLfbEeqS54ICgwWEeQ" name="CrossComponentIssue_concerns_Interface" memberEnd="_F1o00rfbEeqS54ICgwWEeQ _F1pb4rfbEeqS54ICgwWEeQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_F1o00LfbEeqS54ICgwWEeQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_F1o00bfbEeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_F1pb4rfbEeqS54ICgwWEeQ" type="_iuHxgKmBEeq2bKz4Gn3EVg" association="_F1oNwLfbEeqS54ICgwWEeQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RXGs4LfbEeqS54ICgwWEeQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RXLlYLfbEeqS54ICgwWEeQ" value="*"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
