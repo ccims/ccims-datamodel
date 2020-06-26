@@ -74,7 +74,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_caY3samDEeq2bKz4Gn3EVg" value="*"/>
     </ownedAttribute>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_j9kKsKmCEeq2bKz4Gn3EVg" name="develops" memberEnd="_j9lY0amCEeq2bKz4Gn3EVg _j9l_4KmCEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_j9kKsKmCEeq2bKz4Gn3EVg" name="Developer_develops_Component" memberEnd="_j9lY0amCEeq2bKz4Gn3EVg _j9l_4KmCEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_j9kxwKmCEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_j9lY0KmCEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -82,12 +82,12 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tkx8kKmCEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_wtZTUKmCEeq2bKz4Gn3EVg" name="assigned to" memberEnd="_wtahcqmCEeq2bKz4Gn3EVg _wtbIgqmCEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_wtZTUKmCEeq2bKz4Gn3EVg" name="Developer_assigned to_CrossComponentIssue" memberEnd="_wtahcqmCEeq2bKz4Gn3EVg _wtbIgqmCEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wtahcKmCEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wtahcamCEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_6XXeQKmCEeq2bKz4Gn3EVg" name="classified with" memberEnd="_6XYFUqmCEeq2bKz4Gn3EVg _6XYsYqmCEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_6XXeQKmCEeq2bKz4Gn3EVg" name="CrossComponentIssue_classified with_Label" memberEnd="_6XYFUqmCEeq2bKz4Gn3EVg _6XYsYqmCEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6XYFUKmCEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6XYFUamCEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -95,7 +95,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B_V8QKmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_Dh5UIKmDEeq2bKz4Gn3EVg" name="links to" memberEnd="_Dh6iQqmDEeq2bKz4Gn3EVg _Dh7JUqmDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_Dh5UIKmDEeq2bKz4Gn3EVg" name="CrossComponentIssue_links to_CrossComponentIssue" memberEnd="_Dh6iQqmDEeq2bKz4Gn3EVg _Dh7JUqmDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Dh6iQKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Dh6iQamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -103,24 +103,24 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Dh7JUamDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_Qoy48KmDEeq2bKz4Gn3EVg" name="manages" memberEnd="_QozgAqmDEeq2bKz4Gn3EVg _Qo0uIamDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_Qoy48KmDEeq2bKz4Gn3EVg" name="CrossComponentIssueManagementSystem_manages_CrossComponentIssue" memberEnd="_QozgAqmDEeq2bKz4Gn3EVg _Qo0uIamDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QozgAKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QozgAamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Qo0uIamDEeq2bKz4Gn3EVg" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_Qoy48KmDEeq2bKz4Gn3EVg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_XAgo8KmDEeq2bKz4Gn3EVg" name="is connected to" memberEnd="_XAh3EqmDEeq2bKz4Gn3EVg _XAjsQamDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_XAgo8KmDEeq2bKz4Gn3EVg" name="CrossComponentIssueManagementSystem_is connected to_IssueManagementSystem" memberEnd="_XAh3EqmDEeq2bKz4Gn3EVg _XAjsQamDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XAh3EKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XAh3EamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_XAjsQamDEeq2bKz4Gn3EVg" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_XAgo8KmDEeq2bKz4Gn3EVg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_caWbcKmDEeq2bKz4Gn3EVg" name="stored in" memberEnd="_caYQoamDEeq2bKz4Gn3EVg _caY3sqmDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_caWbcKmDEeq2bKz4Gn3EVg" name="Issue_stored in_IssueManagementSystem" memberEnd="_caYQoamDEeq2bKz4Gn3EVg _caY3sqmDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_caXpkKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_caYQoKmDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_oyh5EKmDEeq2bKz4Gn3EVg" name="concerns" memberEnd="_oyjHMKmDEeq2bKz4Gn3EVg _oyjuQKmDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_oyh5EKmDEeq2bKz4Gn3EVg" name="Issue_concerns_Component" memberEnd="_oyjHMKmDEeq2bKz4Gn3EVg _oyjuQKmDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyigIKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyigIamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -129,7 +129,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tGqAsKmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_vywakKmDEeq2bKz4Gn3EVg" name="concerns" memberEnd="_vyxosKmDEeq2bKz4Gn3EVg _vyyPwamDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_vywakKmDEeq2bKz4Gn3EVg" name="CrossComponentIssue_concerns_Component" memberEnd="_vyxosKmDEeq2bKz4Gn3EVg _vyyPwamDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vyxBoKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vyxBoamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -138,7 +138,7 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G-o0KmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_1BZCoKmDEeq2bKz4Gn3EVg" name="represents" memberEnd="_1BZpsqmDEeq2bKz4Gn3EVg _1Ba30KmDEeq2bKz4Gn3EVg">
+  <packagedElement xmi:type="uml:Association" xmi:id="_1BZCoKmDEeq2bKz4Gn3EVg" name="CrossComponentIssue_represents_Issue" memberEnd="_1BZpsqmDEeq2bKz4Gn3EVg _1Ba30KmDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1BZpsKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1BZpsamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
     </eAnnotations>
@@ -147,19 +147,19 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8oev0KmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_9qROULe4EeqS54ICgwWEeQ" name="has" memberEnd="_9qX8ALe4EeqS54ICgwWEeQ _9qZxMbe4EeqS54ICgwWEeQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_9qROULe4EeqS54ICgwWEeQ" name="CrossComponentIssueManagementSystem_has_Label" memberEnd="_9qX8ALe4EeqS54ICgwWEeQ _9qZxMbe4EeqS54ICgwWEeQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9qVfwLe4EeqS54ICgwWEeQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9qWG0Le4EeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_9qZxMbe4EeqS54ICgwWEeQ" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_9qROULe4EeqS54ICgwWEeQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_9sAeQLe5EeqS54ICgwWEeQ" name="has" memberEnd="_9sC6gbe5EeqS54ICgwWEeQ _9sDhkbe5EeqS54ICgwWEeQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_9sAeQLe5EeqS54ICgwWEeQ" name="CrossComponentIssueManagementSystem_has_Developer" memberEnd="_9sC6gbe5EeqS54ICgwWEeQ _9sDhkbe5EeqS54ICgwWEeQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9sCTcLe5EeqS54ICgwWEeQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9sC6gLe5EeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_9sDhkbe5EeqS54ICgwWEeQ" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_9sAeQLe5EeqS54ICgwWEeQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_yicTYLe6EeqS54ICgwWEeQ" name="has" memberEnd="_yievoLe6EeqS54ICgwWEeQ _yifWsre6EeqS54ICgwWEeQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_yicTYLe6EeqS54ICgwWEeQ" name="CrossComponentIssueManagementSystem_has_Component" memberEnd="_yievoLe6EeqS54ICgwWEeQ _yifWsre6EeqS54ICgwWEeQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_yieIkLe6EeqS54ICgwWEeQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_yieIkbe6EeqS54ICgwWEeQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
