@@ -1,0 +1,10 @@
+import 'CCIMS-Metamodel.uml'
+package _'CCIMS-Metamodel'
+
+context CrossComponentIssue
+
+-- If a cross component issue concerns an interface, it must also concern the component providing this interface
+inv concerned_interface_provided_by_concerned_component:
+self.concernedInterface <> OclVoid implies self.concernedComponents->select(component | component.providedInterfaces->including(self.concernedInterface))->size() = 1
+
+endpackage
