@@ -30,9 +30,6 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wtbIgKmCEeq2bKz4Gn3EVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wtbIgamCEeq2bKz4Gn3EVg" value="*"/>
     </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_1BZpsqmDEeq2bKz4Gn3EVg" name="representedIssues" type="_edd_MKmCEeq2bKz4Gn3EVg" association="_1BZCoKmDEeq2bKz4Gn3EVg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1BaQwamDEeq2bKz4Gn3EVg" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_vyxosKmDEeq2bKz4Gn3EVg" name="concernedComponents" type="_g2BncKmBEeq2bKz4Gn3EVg" association="_vywakKmDEeq2bKz4Gn3EVg">
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyyPwKmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedAttribute>
@@ -67,9 +64,6 @@
     </ownedAttribute>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_bidmoKmCEeq2bKz4Gn3EVg" name="CrossComponentIssueManagementSystem">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_XAh3EqmDEeq2bKz4Gn3EVg" name="issueRootLocations" type="_fRp1MKmCEeq2bKz4Gn3EVg" aggregation="composite" association="_XAgo8KmDEeq2bKz4Gn3EVg">
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XAjsQKmDEeq2bKz4Gn3EVg" value="*"/>
-    </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_QozgAqmDEeq2bKz4Gn3EVg" name="managedCroCoIssues" type="_iuHxgKmBEeq2bKz4Gn3EVg" aggregation="composite" association="_Qoy48KmDEeq2bKz4Gn3EVg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qo0HEKmDEeq2bKz4Gn3EVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qo0uIKmDEeq2bKz4Gn3EVg" value="*"/>
@@ -87,25 +81,6 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yifWsbe6EeqS54ICgwWEeQ" value="*"/>
     </ownedAttribute>
     <ownedAttribute xmi:type="uml:Property" xmi:id="_VcRuwLxKEeqDpNQASHkI0g" name="locationUri" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_edd_MKmCEeq2bKz4Gn3EVg" name="Issue">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_caY3sqmDEeq2bKz4Gn3EVg" name="location" type="_fRp1MKmCEeq2bKz4Gn3EVg" association="_caWbcKmDEeq2bKz4Gn3EVg"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_oyjHMKmDEeq2bKz4Gn3EVg" name="concernedComponent" type="_g2BncKmBEeq2bKz4Gn3EVg" association="_oyh5EKmDEeq2bKz4Gn3EVg"/>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_2myoULxJEeqDpNQASHkI0g" name="id" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
-    </ownedAttribute>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_fRp1MKmCEeq2bKz4Gn3EVg" name="IssueManagementSystem">
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_caYQoamDEeq2bKz4Gn3EVg" name="storedIssues" type="_edd_MKmCEeq2bKz4Gn3EVg" aggregation="composite" association="_caWbcKmDEeq2bKz4Gn3EVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_caY3sKmDEeq2bKz4Gn3EVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_caY3samDEeq2bKz4Gn3EVg" value="*"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_9OYnYLxJEeqDpNQASHkI0g" name="name" visibility="private">
-      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-    </ownedAttribute>
-    <ownedAttribute xmi:type="uml:Property" xmi:id="_DpNVwLxKEeqDpNQASHkI0g" name="locationUri" visibility="private">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
   </packagedElement>
@@ -144,26 +119,6 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_Qo0uIamDEeq2bKz4Gn3EVg" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_Qoy48KmDEeq2bKz4Gn3EVg"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_XAgo8KmDEeq2bKz4Gn3EVg" name="CrossComponentIssueManagementSystem_is connected to_IssueManagementSystem" memberEnd="_XAh3EqmDEeq2bKz4Gn3EVg _XAjsQamDEeq2bKz4Gn3EVg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_XAh3EKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_XAh3EamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_XAjsQamDEeq2bKz4Gn3EVg" type="_bidmoKmCEeq2bKz4Gn3EVg" association="_XAgo8KmDEeq2bKz4Gn3EVg"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_caWbcKmDEeq2bKz4Gn3EVg" name="Issue_stored in_IssueManagementSystem" memberEnd="_caYQoamDEeq2bKz4Gn3EVg _caY3sqmDEeq2bKz4Gn3EVg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_caXpkKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_caYQoKmDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_oyh5EKmDEeq2bKz4Gn3EVg" name="Issue_concerns_Component" memberEnd="_oyjHMKmDEeq2bKz4Gn3EVg _oyjuQKmDEeq2bKz4Gn3EVg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oyigIKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_oyigIamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_oyjuQKmDEeq2bKz4Gn3EVg" type="_edd_MKmCEeq2bKz4Gn3EVg" association="_oyh5EKmDEeq2bKz4Gn3EVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tGZiAKmDEeq2bKz4Gn3EVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tGqAsKmDEeq2bKz4Gn3EVg" value="*"/>
-    </ownedEnd>
-  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_vywakKmDEeq2bKz4Gn3EVg" name="CrossComponentIssue_concerns_Component" memberEnd="_vyxosKmDEeq2bKz4Gn3EVg _vyyPwamDEeq2bKz4Gn3EVg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vyxBoKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vyxBoamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
@@ -171,15 +126,6 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_vyyPwamDEeq2bKz4Gn3EVg" type="_iuHxgKmBEeq2bKz4Gn3EVg" association="_vywakKmDEeq2bKz4Gn3EVg">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0G1e4KmDEeq2bKz4Gn3EVg"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0G-o0KmDEeq2bKz4Gn3EVg" value="*"/>
-    </ownedEnd>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_1BZCoKmDEeq2bKz4Gn3EVg" name="CrossComponentIssue_represents_Issue" memberEnd="_1BZpsqmDEeq2bKz4Gn3EVg _1Ba30KmDEeq2bKz4Gn3EVg">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1BZpsKmDEeq2bKz4Gn3EVg" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1BZpsamDEeq2bKz4Gn3EVg" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_1Ba30KmDEeq2bKz4Gn3EVg" type="_iuHxgKmBEeq2bKz4Gn3EVg" association="_1BZCoKmDEeq2bKz4Gn3EVg">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8oYpMKmDEeq2bKz4Gn3EVg"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8oev0KmDEeq2bKz4Gn3EVg" value="*"/>
     </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_9qROULe4EeqS54ICgwWEeQ" name="CrossComponentIssueManagementSystem_has_Label" memberEnd="_9qX8ALe4EeqS54ICgwWEeQ _9qZxMbe4EeqS54ICgwWEeQ">
