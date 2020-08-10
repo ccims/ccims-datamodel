@@ -1,5 +1,5 @@
-import 'CCIMS-Metamodel.uml'
-package _'CCIMS-Metamodel'
+import 'ccims-datamodel.uml'
+package _'ccims-datamodel'
 
 context CrossComponentIssue
 
