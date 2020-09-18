@@ -1,10 +1,10 @@
 import 'ccims-datamodel.uml'
 package _'ccims-datamodel'
 
-context CrossComponentIssue
+context Location
 
 -- If a cross component issue concerns an interface, it must also concern the component providing this interface
-inv concerned_interface_provided_by_concerned_component:
-self.concernedInterface <> OclVoid implies self.concernedComponents->select(component | component.providedInterfaces->including(self.concernedInterface))->size() = 1
+inv interface_provided_by_component:
+self.interface <> OclVoid implies self.component->select(component | component.providedInterfaces->including(self.interface))->size() = 1
 
 endpackage
