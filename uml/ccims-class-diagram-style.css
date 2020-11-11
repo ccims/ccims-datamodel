@@ -5,3 +5,7 @@ Association > Label:sourceRole, Association > Label:targetRole {
 Property {
 	maskLabel: name, visibility, type;
 }
+
+* {
+	fontHeight: 14px;
+}
